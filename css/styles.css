@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1250px;
+}
+.head{
+    display: flex;
+    padding: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 16, 80);
+    font-size: 30px;
+    margin-left: 200px;
+}
+.menu{
+    position: relative;
+    top: 5px;
+    left: 200px;
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+}
+.mcontact a{
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    width: 200px;
+    background-color: rgb(255, 41, 41);
+    padding: 15px;
+    margin-left: 300px;
+    top: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.texts{
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.texts p{
+    font-size: 20px;
+}
+.texts h1{
+    position: relative;
+    font-size: 50px;
+    top: 20px;
+}
+.texts a{
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    width: 200px;
+    background-color: rgb(255, 41, 41);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.foto{
+    margin-left: 200px;
+}
+@media (max-width: 414px) {
+    .container{
+        width: 300px;
+    }
+    .logo a{
+        z-index: 99;
+        margin-left: 5px;
+        color: rgb(2, 2, 2);
+    }
+    .menu{
+        position: absolute;
+        left: 20px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+}
+    .menu a{
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        z-index: -1;
+        left: 260px;
+        top: 20px;
+    }
+    .mcontact{
+        position: absolute;
+        right: 550px;
+    }
+    .mcontact a{
+        position: absolute;
+        width: 100px;
+        left: 130px;
+        top: 0;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .title{
+        position: absolute;
+        right: 70px;
+        top: -100px;
+        grid-template-columns: 0%;
+    }
+    .title p{
+        font-size: 14px;
+        width: 100px;
+        color: rgb(70, 70, 70);
+    }
+    .title h1{
+        font-size: 30px;
+        width: 300px;
+        color: black;
+    }
+    .title a{
+        width: 100px;
+        font-size: 13px;
+        padding: 13px;
+    }
+    .foto{
+        position: absolute;
+        top: 0;
+        width: 470px;
+        z-index: -2;
+    }
+}
